@@ -362,15 +362,8 @@ function processGraphQLQuery(query, state) {
           if (contentfulSysFields.length) {
             const transformedSysFields = cloneDeep(contentfulSysFields).map(
               field => {
-                const transformedField = {
-                  ...field,
-                  name: {
-                    ...field.name,
-                    value: SYS_FIELDS_TRANSFORMS.get(field.name.value),
-                  },
-                }
-
-                return transformedField
+                field.name.value = SYS_FIELDS_TRANSFORMS.get(field.name.value)
+                return field
               }
             )
 
@@ -420,7 +413,7 @@ function processGraphQLQuery(query, state) {
           })
         }
       },
-      SelectionSet(node) {
+      SelectionSet(node, index, parent) {
         // Rename content type node selectors
         node.selections.forEach(field => {
           if (isContentTypeSelector(field.name?.value)) {
@@ -445,16 +438,11 @@ function processGraphQLQuery(query, state) {
           SYS_FIELDS_TRANSFORMS.has(name?.value)
         )
 
-        if (contentfulSysFields.length) {
+        if (contentfulSysFields.length && parent.name.value !== `sys`) {
           const transformedSysFields = cloneDeep(contentfulSysFields).map(
             field => {
-              return {
-                ...field,
-                name: {
-                  ...field.name,
-                  value: SYS_FIELDS_TRANSFORMS.get(field.name.value),
-                },
-              }
+              field.name.value = SYS_FIELDS_TRANSFORMS.get(field.name.value)
+              return field
             }
           )
 
