@@ -25,3 +25,6 @@ result.allContentfulPage.edges.forEach((node) => {
     revision,
   } = node
 })
+
+const importantCheck = !!customResult.node.contentful_id
+const testLocale = data.contentfulPage.node.node_locale

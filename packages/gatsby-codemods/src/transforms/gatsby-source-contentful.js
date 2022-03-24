@@ -92,12 +92,20 @@ export function updateImport(babel) {
   return {
     visitor: {
       Identifier(path, state) {
-        if (path.node.name === `contentfulId`) {
+        if (path.node.name === `contentful_id`) {
           console.log(
             `${renderFilename(
               path,
               state
-            )}: You might need to change "contentfulId" -> "sys.id"`
+            )}: You might need to change "contentful_id" -> "sys.id"`
+          )
+        }
+        if (path.node.name === `node_locale`) {
+          console.log(
+            `${renderFilename(
+              path,
+              state
+            )}: You might need to change "node_locale" -> "sys.locale"`
           )
         }
         if (path.node.name === `type`) {

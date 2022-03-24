@@ -29,3 +29,6 @@ result.allContentfulPage.edges.forEach((node) => {
     }
   } = node
 })
+
+const importantCheck = !!customResult.node.contentful_id
+const testLocale = data.contentfulContentTypePage.node.node_locale
