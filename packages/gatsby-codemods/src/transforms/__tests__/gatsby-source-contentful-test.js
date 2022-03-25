@@ -2,6 +2,7 @@ const tests = [
   `assets`,
   `graphql-filter`,
   `graphql-sort`,
+  `metadata`,
   `query-results`,
   `sys`,
   `sys-type`,

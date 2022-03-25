@@ -181,7 +181,7 @@ export async function generateSchema({
       fields: {
         id: { type: `ID!` },
         sys: { type: `ContentfulSys!` },
-        metadata: { type: `ContentfulMetadata!` },
+        contentfulMetadata: { type: `ContentfulMetadata!` },
       },
       interfaces: [`Node`],
     })
@@ -193,7 +193,7 @@ export async function generateSchema({
       fields: {
         id: { type: `ID!` },
         sys: { type: `ContentfulSys!` },
-        metadata: { type: `ContentfulMetadata!` },
+        contentfulMetadata: { type: `ContentfulMetadata!` },
       },
       interfaces: [`ContentfulEntity`, `Node`],
     })
@@ -485,7 +485,7 @@ export async function generateSchema({
           fields: {
             id: { type: `ID!` },
             sys: { type: `ContentfulSys!` },
-            metadata: { type: `ContentfulMetadata!` },
+            contentfulMetadata: { type: `ContentfulMetadata!` },
             ...fields,
           },
           interfaces: [`ContentfulEntity`, `ContentfulEntry`, `Node`],

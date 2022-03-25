@@ -204,6 +204,20 @@ export function updateImport(babel) {
             )}: You might need to change flatten the Contentful Asset structure: "file.details.image.width" -> "width"`
           )
         }
+
+        if (path.node.property?.name === `metadata`) {
+          if (path.node.object.property.name === `node`) {
+            path.node.property.name = `contentfulMetadata`
+            state.opts.hasChanged = true
+            return
+          }
+          console.log(
+            `${renderFilename(
+              path,
+              state
+            )}: You might need to change your data selectors: "metadata" -> "contentfulMetadata"`
+          )
+        }
       },
       TaggedTemplateExpression({ node }, state) {
         if (node.tag.name !== `graphql`) {
@@ -426,6 +440,14 @@ function processGraphQLQuery(query, state) {
         node.selections.forEach(field => {
           if (isContentTypeSelector(field.name?.value)) {
             field.name.value = updateContentfulSelector(field.name.value)
+            hasChanged = true
+          }
+        })
+
+        // Rename metadata to contentfulMetadata node selectors
+        node.selections.forEach(field => {
+          if (field.name?.value === `metadata`) {
+            field.name.value = `contentfulMetadata`
             hasChanged = true
           }
         })
