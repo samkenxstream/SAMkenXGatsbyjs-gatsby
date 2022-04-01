@@ -27,7 +27,7 @@
     "fast-json-stable-stringify": "^2.1.0",
     "file-type": "^15.0.1",
     "filesize": "^6.4.0",
-    "fs-extra": "^10.0.0",
+    "fs-extra": "^10.0.1",
     "gatsby-core-utils": "^3.12.0-next.1",
     "gatsby-plugin-catch-links": "^4.12.0-next.0",
     "gatsby-plugin-utils": "^3.6.0-next.1",
