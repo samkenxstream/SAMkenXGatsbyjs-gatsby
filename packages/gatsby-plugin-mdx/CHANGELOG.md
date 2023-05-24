@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.10.0](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-mdx@5.10.0/packages/gatsby-plugin-mdx) (2023-05-16)
+
+[🧾 Release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.10)
+
+#### Bug Fixes
+
+- update minor and patch dependencies for gatsby-plugin-mdx [#38027](https://github.com/gatsbyjs/gatsby/issues/38027) ([213d8b0](https://github.com/gatsbyjs/gatsby/commit/213d8b060380af296dcd430a684ee02107a890cf))
+
+#### Chores
+
+- update [dev] minor and patch dependencies for gatsby-plugin-mdx [#37995](https://github.com/gatsbyjs/gatsby/issues/37995) ([a9603e0](https://github.com/gatsbyjs/gatsby/commit/a9603e0f32d03901c987dfb92c9635a71e394a66))
+- Improve README ([0eacb12](https://github.com/gatsbyjs/gatsby/commit/0eacb1257e50e78f2e47af9b8a0a92b27ff64255))
+
+## [5.9.0](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-mdx@5.9.0/packages/gatsby-plugin-mdx) (2023-04-18)
+
+[🧾 Release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.9)
+
+#### Bug Fixes
+
+- update dependency fs-extra to ^11.1.1 [#37827](https://github.com/gatsbyjs/gatsby/issues/37827) ([3e9a590](https://github.com/gatsbyjs/gatsby/commit/3e9a590fdc0b4cdbc763b6a6e3ca3e983ac8231a))
+- update typescript to v5 (major) [#37906](https://github.com/gatsbyjs/gatsby/issues/37906) ([3859ba6](https://github.com/gatsbyjs/gatsby/commit/3859ba6ce629e658525f858a8799b08c34c3eda5))
+
+#### Chores
+
+- Add "ESM and Gatsby" [#37934](https://github.com/gatsbyjs/gatsby/issues/37934) ([e258553](https://github.com/gatsbyjs/gatsby/commit/e25855357c4653582b8d1dde7ab56cb147670ec3))
+- update dependency @types/estree to v1 for gatsby-plugin-mdx [#37892](https://github.com/gatsbyjs/gatsby/issues/37892) ([ef74baf](https://github.com/gatsbyjs/gatsby/commit/ef74baf73880ff61f58648b034f7cd928a68bf38))
+- update typescript [#37848](https://github.com/gatsbyjs/gatsby/issues/37848) ([9f92796](https://github.com/gatsbyjs/gatsby/commit/9f92796070b0e73fa92089af93de376c9be9021e))
+- update [dev] minor and patch dependencies for gatsby-plugin-mdx [#37817](https://github.com/gatsbyjs/gatsby/issues/37817) ([5044ea0](https://github.com/gatsbyjs/gatsby/commit/5044ea0bb17c12bd998aaf4f3c5660d89f2dc8bb))
+
 ## [5.8.0](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-mdx@5.8.0/packages/gatsby-plugin-mdx) (2023-03-21)
 
 [🧾 Release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.8)

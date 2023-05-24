@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.10.0](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-sharp@5.10.0/packages/gatsby-plugin-sharp) (2023-05-16)
+
+[🧾 Release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.10)
+
+#### Bug Fixes
+
+- update dependency sharp to ^0.32.1 [#38024](https://github.com/gatsbyjs/gatsby/issues/38024) ([d7cccfe](https://github.com/gatsbyjs/gatsby/commit/d7cccfeac7dbb0f130f87d809879284319d7830d))
+- update dependency semver to ^7.5.0 [#38023](https://github.com/gatsbyjs/gatsby/issues/38023) ([2564f6b](https://github.com/gatsbyjs/gatsby/commit/2564f6b247b622b51522ff1f91fe2a9ef34fa571))
+
+## [5.9.0](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-sharp@5.9.0/packages/gatsby-plugin-sharp) (2023-04-18)
+
+[🧾 Release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.9)
+
+#### Bug Fixes
+
+- update dependency fs-extra to ^11.1.1 [#37827](https://github.com/gatsbyjs/gatsby/issues/37827) ([3e9a590](https://github.com/gatsbyjs/gatsby/commit/3e9a590fdc0b4cdbc763b6a6e3ca3e983ac8231a))
+- don't serve static assets that are not result of currently triggered deferred job [#37796](https://github.com/gatsbyjs/gatsby/issues/37796) ([6539860](https://github.com/gatsbyjs/gatsby/commit/6539860a588e3cdd17b77e7bcd98d61cbf1e2d20))
+
 ### [5.8.1](https://github.com/gatsbyjs/gatsby/commits/gatsby-plugin-sharp@5.8.1/packages/gatsby-plugin-sharp) (2023-03-29)
 
 #### Bug Fixes
