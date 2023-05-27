@@ -32,6 +32,6 @@ packages/gatsby-plugin-gatsby-cloud/utils
 packages/gatsby-plugin-preact/fast-refresh
 
 packages/gatsby-source-wordpress/test-site/
-!packages/gatsby-source-wordpress/test-site/__tests__
-!packages/gatsby-source-wordpress/test-site/test-utils
-!packages/gatsby-worker/src/__tests__/fixtures/
+packages/gatsby-source-wordpress/test-site/__tests__
+packages/gatsby-source-wordpress/test-site/test-utils
+packages/gatsby-worker/src/__tests__/fixtures/
